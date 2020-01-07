@@ -1,0 +1,468 @@
+gbak:readied database D:\Desenv\Desenvolvido\Contas\DB\BASE.FDB for backup 
+gbak:creating file D:\Desenv\Desenvolvido\Contas\DB\BASE.fbk 
+gbak:starting transaction 
+gbak:database D:\Desenv\Desenvolvido\Contas\DB\BASE.FDB has a page size of 4096 bytes. 
+gbak:writing domains 
+gbak:    writing domain RDB$1 
+gbak:    writing domain RDB$2 
+gbak:    writing domain RDB$3 
+gbak:    writing domain RDB$4 
+gbak:    writing domain RDB$5 
+gbak:    writing domain RDB$6 
+gbak:    writing domain RDB$7 
+gbak:    writing domain RDB$8 
+gbak:    writing domain RDB$9 
+gbak:    writing domain RDB$10 
+gbak:    writing domain RDB$72 
+gbak:    writing domain RDB$12 
+gbak:    writing domain RDB$13 
+gbak:    writing domain RDB$14 
+gbak:    writing domain RDB$15 
+gbak:    writing domain RDB$16 
+gbak:    writing domain RDB$17 
+gbak:    writing domain RDB$18 
+gbak:    writing domain RDB$19 
+gbak:    writing domain RDB$20 
+gbak:    writing domain RDB$21 
+gbak:    writing domain RDB$22 
+gbak:    writing domain RDB$23 
+gbak:    writing domain RDB$24 
+gbak:    writing domain RDB$25 
+gbak:    writing domain RDB$26 
+gbak:    writing domain RDB$27 
+gbak:    writing domain RDB$28 
+gbak:    writing domain RDB$29 
+gbak:    writing domain RDB$30 
+gbak:    writing domain RDB$31 
+gbak:    writing domain RDB$32 
+gbak:    writing domain RDB$33 
+gbak:    writing domain RDB$34 
+gbak:    writing domain RDB$35 
+gbak:    writing domain RDB$36 
+gbak:    writing domain RDB$37 
+gbak:    writing domain RDB$38 
+gbak:    writing domain RDB$39 
+gbak:    writing domain RDB$40 
+gbak:    writing domain RDB$41 
+gbak:    writing domain RDB$42 
+gbak:    writing domain RDB$43 
+gbak:    writing domain RDB$44 
+gbak:    writing domain RDB$45 
+gbak:    writing domain RDB$46 
+gbak:    writing domain RDB$47 
+gbak:    writing domain RDB$48 
+gbak:    writing domain RDB$49 
+gbak:    writing domain RDB$50 
+gbak:    writing domain RDB$51 
+gbak:    writing domain RDB$52 
+gbak:    writing domain RDB$53 
+gbak:    writing domain RDB$54 
+gbak:    writing domain RDB$55 
+gbak:    writing domain RDB$56 
+gbak:    writing domain RDB$57 
+gbak:    writing domain RDB$58 
+gbak:    writing domain RDB$59 
+gbak:    writing domain RDB$60 
+gbak:    writing domain RDB$61 
+gbak:    writing domain RDB$62 
+gbak:    writing domain RDB$63 
+gbak:    writing domain RDB$64 
+gbak:    writing domain RDB$66 
+gbak:    writing domain RDB$67 
+gbak:    writing domain RDB$68 
+gbak:    writing domain RDB$69 
+gbak:    writing domain RDB$70 
+gbak:    writing domain RDB$71 
+gbak:    writing domain RDB$73 
+gbak:    writing domain RDB$74 
+gbak:    writing domain RDB$75 
+gbak:    writing domain RDB$76 
+gbak:    writing domain RDB$77 
+gbak:    writing domain RDB$78 
+gbak:    writing domain RDB$79 
+gbak:    writing domain RDB$80 
+gbak:    writing domain RDB$81 
+gbak:writing shadow files 
+gbak:writing character sets 
+gbak:writing collations 
+gbak:writing tables 
+gbak:    writing table CONTAS 
+gbak:         writing column COD_CONTA 
+gbak:         writing column DATA_CONTA 
+gbak:         writing column VALOR_CONTA 
+gbak:         writing column CODFAVOR_CONTA 
+gbak:         writing column CODOPER_CONTA 
+gbak:         writing column CODCENTROCUSTO_CONTA 
+gbak:         writing column TIPO_CONTA 
+gbak:         writing column DESC_CONTA 
+gbak:         writing column OBS_CONTA 
+gbak:         writing column CODCONDPAG_CONTA 
+gbak:         writing column SITUACAO_CONTA 
+gbak:         writing column CODORIGEM_CONTA 
+gbak:    writing table OPERADORES 
+gbak:         writing column TEXTOLIVRE_OPER 
+gbak:         writing column COD_OPER 
+gbak:         writing column CODCIDADE_OPER 
+gbak:         writing column NUM_OPER 
+gbak:         writing column STATUS_OPER 
+gbak:         writing column PERMISSAO_OPER 
+gbak:         writing column NOME_OPER 
+gbak:         writing column ENDERECO_OPER 
+gbak:         writing column BAIRRO_OPER 
+gbak:         writing column EMAIL_OPER 
+gbak:         writing column FONE1_OPER 
+gbak:         writing column FONE2_OPER 
+gbak:         writing column SENHA_OPER 
+gbak:    writing table PARCELACONTA 
+gbak:         writing column COD_PARCELA 
+gbak:         writing column CODCONTA_PARCELA 
+gbak:         writing column DTVENC_PARCELA 
+gbak:         writing column VALOR_PARCELA 
+gbak:         writing column CODOPER_PARCELA 
+gbak:         writing column SITUACAO_PARCELA 
+gbak:    writing table CIDADES 
+gbak:         writing column COD_CIDADE 
+gbak:         writing column UF_CIDADE 
+gbak:         writing column STATUS_CIDADE 
+gbak:         writing column NOME_CIDADE 
+gbak:         writing column CEP_CIDADE 
+gbak:    writing table FAVORECIDO 
+gbak:         writing column FONE1_FAVOR 
+gbak:         writing column FONE2_FAVOR 
+gbak:         writing column TEXTOLIVRE_FAVOR 
+gbak:         writing column COD_FAVOR 
+gbak:         writing column CODCIDADE_FAVOR 
+gbak:         writing column CODOPER_FAVOR 
+gbak:         writing column TIPOPESSOA_FAVOR 
+gbak:         writing column NOME_FAVOR 
+gbak:         writing column ENDERECO_FAVOR 
+gbak:         writing column BAIRRO_FAVOR 
+gbak:         writing column NUM_FAVOR 
+gbak:         writing column CPF_FAVOR 
+gbak:         writing column RG_FAVOR 
+gbak:         writing column OBS_FAVOR 
+gbak:         writing column STATUS_FAVOR 
+gbak:         writing column EMAIL_FAVOR 
+gbak:    writing table CONDPAG 
+gbak:         writing column NPARCELAS_CONDPAG 
+gbak:         writing column CODOPER_CONDPAG 
+gbak:         writing column STATUS_CONDPAG 
+gbak:         writing column COD_CONDPAG 
+gbak:         writing column DESC_CONDPAG 
+gbak:         writing column INTERVALO_CONDPAG 
+gbak:    writing table FORMPAG 
+gbak:         writing column CODOPER_FORMPAG 
+gbak:         writing column STATUS_FORMPAG 
+gbak:         writing column COD_FORMPAG 
+gbak:         writing column NOME_FORMPAG 
+gbak:    writing table ORIGEM 
+gbak:         writing column CODOPER_ORIGEM 
+gbak:         writing column STATUS_ORIGEM 
+gbak:         writing column COD_ORIGEM 
+gbak:         writing column DESC_ORIGEM 
+gbak:    writing table CENTROCUSTO 
+gbak:         writing column COD_CENTROCUSTO 
+gbak:         writing column CODOPER_CENTROCUSTO 
+gbak:         writing column STATUS_CENTROCUSTO 
+gbak:         writing column NOME_CENTROCUSTO 
+gbak:    writing table HISTCONTA 
+gbak:         writing column DATAHORA_HISTCONTA 
+gbak:         writing column COD_HISTCONTA 
+gbak:         writing column CODPARCELA_HISTCONTA 
+gbak:         writing column CODFORMPAG_HISTCONTA 
+gbak:         writing column VALOR_HISTCONTA 
+gbak:         writing column JURO_HISTCONTA 
+gbak:         writing column DESCONTO_HISTCONTA 
+gbak:         writing column EXTORNADO_HISTCONTA 
+gbak:         writing column OBS_HISTCONTA 
+gbak:writing types 
+gbak:writing filters 
+gbak:writing id generators 
+gbak:writing exceptions 
+gbak:writing functions 
+gbak:writing stored procedures 
+gbak:writing packages 
+gbak:    writing index PK_HISTCONTA 
+gbak:    writing index FK_HISTCONTA_1 
+gbak:    writing index FK_HISTCONTA_2 
+gbak:    writing data for table HISTCONTA 
+gbak:0 records written 
+gbak:    writing index PK_CENTROCUSTO 
+gbak:    writing index FK_CENTROCUSTO_1 
+gbak:    writing data for table CENTROCUSTO 
+gbak:1 records written 
+gbak:    writing index RDB$PRIMARY6 
+gbak:    writing index FK_CODOPER_ORIGEM 
+gbak:    writing data for table ORIGEM 
+gbak:1 records written 
+gbak:    writing index RDB$PRIMARY5 
+gbak:    writing index FK_CODOPER_FORMPAG 
+gbak:    writing data for table FORMPAG 
+gbak:1 records written 
+gbak:    writing index RDB$PRIMARY4 
+gbak:    writing index CODOPER_CONDPAG 
+gbak:    writing data for table CONDPAG 
+gbak:3 records written 
+gbak:    writing index PK_CODFAVORECIDO 
+gbak:    writing index FK_CODCIDADE 
+gbak:    writing index FK_CODOPER 
+gbak:    writing data for table FAVORECIDO 
+gbak:1 records written 
+gbak:    writing index RDB$PRIMARY3 
+gbak:    writing data for table CIDADES 
+gbak:5567 records written 
+gbak:    writing index RDB$PRIMARY2 
+gbak:    writing index FK_CODCONTA 
+gbak:    writing index FK_CODOPER_PARCELA 
+gbak:    writing data for table PARCELACONTA 
+gbak:1 records written 
+gbak:    writing index PK_OPERADORES 
+gbak:    writing index FK_CODCIDADE_OPER 
+gbak:    writing data for table OPERADORES 
+gbak:2 records written 
+gbak:    writing index RDB$PRIMARY1 
+gbak:    writing index FK_CONDPAG 
+gbak:    writing index FK_FAVORCONTA 
+gbak:    writing index FK_ORIGEMCONTA 
+gbak:    writing index FK_CONTAS_1 
+gbak:    writing index FK_OPER 
+gbak:    writing data for table CONTAS 
+gbak:1 records written 
+gbak:writing triggers 
+gbak:writing trigger messages 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SYSDBA 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user PUBLIC 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:    writing privilege for user SUPS 
+gbak:writing security classes 
+gbak:writing table constraints 
+gbak:writing constraint INTEG_1 
+gbak:writing constraint INTEG_2 
+gbak:writing constraint FK_CONDPAG 
+gbak:writing constraint FK_FAVORCONTA 
+gbak:writing constraint FK_ORIGEMCONTA 
+gbak:writing constraint FK_CONTAS_1 
+gbak:writing constraint FK_OPER 
+gbak:writing constraint INTEG_13 
+gbak:writing constraint PK_OPERADORES 
+gbak:writing constraint FK_CODCIDADE_OPER 
+gbak:writing constraint INTEG_3 
+gbak:writing constraint INTEG_4 
+gbak:writing constraint FK_CODCONTA 
+gbak:writing constraint FK_CODOPER_PARCELA 
+gbak:writing constraint INTEG_5 
+gbak:writing constraint INTEG_6 
+gbak:writing constraint PK_CODFAVORECIDO 
+gbak:writing constraint FK_CODCIDADE 
+gbak:writing constraint FK_CODOPER 
+gbak:writing constraint INTEG_7 
+gbak:writing constraint INTEG_8 
+gbak:writing constraint FK_CODOPER_CONDPAG 
+gbak:writing constraint INTEG_9 
+gbak:writing constraint INTEG_10 
+gbak:writing constraint FK_CODOPER_FORMPAG 
+gbak:writing constraint INTEG_11 
+gbak:writing constraint INTEG_12 
+gbak:writing constraint FK_CODOPER_ORIGEM 
+gbak:writing constraint INTEG_14 
+gbak:writing constraint PK_CENTROCUSTO 
+gbak:writing constraint FK_CENTROCUSTO_1 
+gbak:writing constraint INTEG_15 
+gbak:writing constraint PK_HISTCONTA 
+gbak:writing constraint FK_HISTCONTA_1 
+gbak:writing constraint FK_HISTCONTA_2 
+gbak:writing referential constraints 
+gbak:writing check constraints 
+gbak:writing SQL roles 
+gbak:writing names mapping 
+gbak:closing file, committing, and finishing. 294400 bytes written 
+

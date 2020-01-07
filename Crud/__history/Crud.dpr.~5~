@@ -1,0 +1,17 @@
+program Crud;
+
+uses
+  Vcl.Forms,
+  Unt_FrmPrincipal in 'Unt_FrmPrincipal.pas' {FrmPrincipal},
+  Unt_FrmCadCliente in 'Unt_FrmCadCliente.pas' {FrmCadCliente},
+  Unt_DM in 'Unt_DM.pas' {DM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TDM, DM);
+  Application.Run;
+end.

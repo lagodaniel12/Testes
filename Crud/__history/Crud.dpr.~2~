@@ -1,0 +1,14 @@
+program Crud;
+
+uses
+  Vcl.Forms,
+  Unt_FrmPrincipal in 'Unt_FrmPrincipal.pas' {FrmPrincipal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.Run;
+end.

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/09/03 16:25:47.000.934,=F:\Delphi\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/12 13:51:27.000.816,=F:\Delphi\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/19 14:48:21.000.653,=F:\Delphi\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/10/04 08:29:00.000.935,=F:\Delphi\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 14:58:50.000.925,=F:\Delphi\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 14:59:59.000.047,F:\Delphi\Projects\Unit1.pas=F:\Delphi\Aluisio\Crud\Unt_FrmPrincipal.pas</Transaction>
+    <Transaction>2019/11/14 14:59:59.000.047,F:\Delphi\Projects\Unit1.dfm=F:\Delphi\Aluisio\Crud\Unt_FrmPrincipal.dfm</Transaction>
+    <Transaction>2019/11/14 15:00:05.000.429,F:\Delphi\Projects\Project1.dproj=F:\Delphi\Aluisio\Crud\Crud.dproj</Transaction>
+    <Transaction>2019/11/14 15:02:53.000.232,=F:\Delphi\Aluisio\Crud\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 15:03:05.000.724,F:\Delphi\Aluisio\Crud\Unit1.dfm=F:\Delphi\Aluisio\Crud\Unt_FrmCadCliente.dfm</Transaction>
+    <Transaction>2019/11/14 15:03:05.000.724,F:\Delphi\Aluisio\Crud\Unit1.pas=F:\Delphi\Aluisio\Crud\Unt_FrmCadCliente.pas</Transaction>
+    <Transaction>2019/11/14 15:07:43.000.279,=F:\Delphi\Aluisio\Crud\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 15:08:08.000.571,F:\Delphi\Aluisio\Crud\Unit1.pas=F:\Delphi\Aluisio\Crud\Unt_DM.pas</Transaction>
+    <Transaction>2019/11/14 15:08:08.000.571,F:\Delphi\Aluisio\Crud\Unit1.dfm=F:\Delphi\Aluisio\Crud\Unt_DM.dfm</Transaction>
+    <Transaction>2019/11/14 15:46:47.000.421,=F:\Delphi\Aluisio\Crud\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 15:46:59.000.097,F:\Delphi\Aluisio\Crud\Unt_FrmListagemClientes.pas=F:\Delphi\Aluisio\Crud\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 15:46:59.000.097,F:\Delphi\Aluisio\Crud\Unt_FrmListagemClientes.dfm=F:\Delphi\Aluisio\Crud\Unit1.dfm</Transaction>
+    <Transaction>2019/12/15 20:52:45.000.656,=C:\Users\LAGO\Desktop\Crud\Unit1.pas</Transaction>
+    <Transaction>2019/12/15 20:54:01.000.121,C:\Users\LAGO\Desktop\Crud\Unit1.pas=C:\Users\LAGO\Desktop\Crud\Unt_FrmCadProd.pas</Transaction>
+    <Transaction>2019/12/15 20:54:01.000.121,C:\Users\LAGO\Desktop\Crud\Unit1.dfm=C:\Users\LAGO\Desktop\Crud\Unt_FrmCadProd.dfm</Transaction>
+    <Transaction>2019/12/16 22:10:45.000.233,=C:\Users\LAGO\Desktop\Crud\Unit1.pas</Transaction>
+    <Transaction>2019/12/16 22:11:58.000.746,C:\Users\LAGO\Desktop\Crud\Unt_FrmListProd.dfm=C:\Users\LAGO\Desktop\Crud\Unit1.dfm</Transaction>
+    <Transaction>2019/12/16 22:11:58.000.746,C:\Users\LAGO\Desktop\Crud\Unt_FrmListProd.pas=C:\Users\LAGO\Desktop\Crud\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

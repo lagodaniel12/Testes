@@ -1,0 +1,14 @@
+program Vendas;
+
+uses
+  Vcl.Forms,
+  Unt_FrmVendas in 'Unt_FrmVendas.pas' {FrmVendas};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmVendas, FrmVendas);
+  Application.Run;
+end.

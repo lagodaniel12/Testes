@@ -1,0 +1,102 @@
+unit Unt_FrmCadCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, FIBDataSet, pFIBDataSet, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls, System.Actions, Vcl.ActnList;
+
+type
+  TFrmCadCliente = class(TForm)
+    QryClientes: TpFIBDataSet;
+    DSClientes: TDataSource;
+    LbTitulo: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    EdtNome: TDBEdit;
+    EdtCod: TEdit;
+    BtnGravar: TButton;
+    QryClientesCOD_CLIENTE: TFIBIntegerField;
+    QryClientesNOME_CLIENTE: TFIBStringField;
+    ActionList1: TActionList;
+    ActGravar: TAction;
+    procedure FormShow(Sender: TObject);
+    procedure ActGravarExecute(Sender: TObject);
+  private
+    procedure FindCod(iCod: Integer);
+    function TestaCampos(): Boolean;
+  public
+    CodAtual: Integer;
+  end;
+
+var
+  FrmCadCliente: TFrmCadCliente;
+
+implementation
+
+uses Unt_DM;
+
+{$R *.dfm}
+
+{ TFrmCadCliente }
+
+procedure TFrmCadCliente.ActGravarExecute(Sender: TObject);
+begin
+  if not TestaCampos then Exit;
+
+  QryClientesCOD_CLIENTE.AsString := EdtCod.Text;
+
+  try
+    QryClientes.Post;
+    QryClientes.UpdateTransaction.Commit;
+    FindCod(0);
+  except
+    on E: Exception do begin
+      QryClientes.UpdateTransaction.Rollback;
+      ShowMessage('Erro ao Cadastrar Cliente. Erro: ' +#13+ e.Message);
+    end;
+  end;
+end;
+
+procedure TFrmCadCliente.FindCod(iCod: Integer);
+begin
+  QryClientes.Close;
+  QryClientes.ParamByName('COD_CLIENTE').AsInteger := iCod;
+  QryClientes.Open;
+
+  if (QryClientes.IsEmpty) then begin //Cadastra
+    LbTitulo.Caption := 'Cadastrando Cliente';
+    QryClientes.Append;
+    EdtCod.Clear;
+  end else begin // Edita
+    LbTitulo.Caption := 'Editando Cliente ' + iCod.ToString;
+    QryClientes.Edit;
+    EdtCod.Text := QryClientesCOD_CLIENTE.AsString;
+  end;
+end;
+
+procedure TFrmCadCliente.FormShow(Sender: TObject);
+begin
+  FindCod(CodAtual);
+end;
+
+function TFrmCadCliente.TestaCampos: Boolean;
+begin
+  Result := False;
+
+  if (EdtCod.Text = '') then begin
+    EdtCod.SetFocus;
+    ShowMessage('O Código é Obrigatório.');
+    Exit;
+  end;
+
+  if (EdtNome.Text = '') then begin
+    EdtNome.SetFocus;
+    ShowMessage('O Nome é Obrigatório.');
+    Exit;
+  end;
+
+  Result := True;
+end;
+
+end.

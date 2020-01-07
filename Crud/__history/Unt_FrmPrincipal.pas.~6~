@@ -1,0 +1,42 @@
+unit Unt_FrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFrmPrincipal = class(TForm)
+    btnCadastrarCliente: TButton;
+    procedure btnCadastrarClienteClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+uses
+  Unt_FrmCadCliente;
+
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.btnCadastrarClienteClick(Sender: TObject);
+begin
+  try
+    if (FrmCadCliente = nil) then Application.CreateForm(TFrmCadCliente, FrmCadCliente);
+    FrmCadCliente.CodAtual := 0;
+    FrmCadCliente.ShowModal;
+  finally
+    FreeAndNil(FrmCadCliente);
+  end;
+
+end;
+
+end.

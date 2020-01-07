@@ -1,0 +1,147 @@
+object FrmListagemClientes: TFrmListagemClientes
+  Left = 0
+  Top = 0
+  BorderWidth = 4
+  Caption = 'Listagem de Clientes'
+  ClientHeight = 356
+  ClientWidth = 689
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnKeyDown = FormKeyDown
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 689
+    Height = 41
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitTop = -6
+    ExplicitWidth = 697
+    object Label1: TLabel
+      Left = 24
+      Top = 8
+      Width = 23
+      Height = 13
+      Caption = 'Cod:'
+    end
+    object Label2: TLabel
+      Left = 208
+      Top = 8
+      Width = 31
+      Height = 13
+      Caption = 'Nome:'
+    end
+    object edtNome: TEdit
+      Left = 242
+      Top = 5
+      Width = 235
+      Height = 21
+      TabOrder = 0
+    end
+    object edtCodigo: TEdit
+      Left = 51
+      Top = 5
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 79
+    Width = 689
+    Height = 277
+    Align = alClient
+    DataSource = DSListagemClientes
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnTitleClick = DBGrid1TitleClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'COD_CLIENTE'
+        Title.Alignment = taRightJustify
+        Title.Caption = 'Cod'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME_CLIENTE'
+        Title.Caption = 'Nome'
+        Visible = True
+      end>
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 41
+    Width = 689
+    Height = 38
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 2
+    ExplicitWidth = 697
+    object LbCountReg: TLabel
+      Left = 600
+      Top = 11
+      Width = 62
+      Height = 13
+      Caption = '0 Registro(s)'
+    end
+    object BtnAtualizar: TButton
+      Left = 221
+      Top = 6
+      Width = 120
+      Height = 25
+      Caption = 'Atualizar <F5>'
+      TabOrder = 0
+      OnClick = BtnAtualizarClick
+    end
+    object BtnLimpaCondicoes: TButton
+      Left = 357
+      Top = 6
+      Width = 120
+      Height = 25
+      Caption = 'Limpar Campos <F2>'
+      TabOrder = 1
+      OnClick = BtnLimpaCondicoesClick
+    end
+  end
+  object DSListagemClientes: TDataSource
+    DataSet = QryClientes
+    Left = 344
+    Top = 184
+  end
+  object QryClientes: TpFIBDataSet
+    SelectSQL.Strings = (
+      'SELECT * FROM CLIENTES')
+    Transaction = DM.TransRead
+    Database = DM.DB
+    SQL.Strings = (
+      'SELECT * FROM CLIENTES')
+    DefaultFormats.DisplayFormatTime = 'HH:MM'
+    Left = 344
+    Top = 120
+    object QryClientesCOD_CLIENTE: TFIBIntegerField
+      FieldName = 'COD_CLIENTE'
+    end
+    object QryClientesNOME_CLIENTE: TFIBStringField
+      FieldName = 'NOME_CLIENTE'
+      Size = 60
+      EmptyStrToNull = True
+    end
+  end
+end

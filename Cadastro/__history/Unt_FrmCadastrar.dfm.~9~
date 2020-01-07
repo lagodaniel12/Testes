@@ -1,0 +1,105 @@
+object FrmCadastrar: TFrmCadastrar
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'Cadastrar'
+  ClientHeight = 212
+  ClientWidth = 455
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 40
+    Top = 80
+    Width = 26
+    Height = 13
+    Caption = 'Cod: '
+  end
+  object Label2: TLabel
+    Left = 40
+    Top = 112
+    Width = 34
+    Height = 13
+    Caption = 'Nome: '
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 455
+    Height = 49
+    Align = alTop
+    TabOrder = 0
+    object LblCadastro: TLabel
+      Left = 152
+      Top = 14
+      Width = 140
+      Height = 19
+      Caption = 'Cadastro de Clientes'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object EdtCod: TDBEdit
+    Left = 80
+    Top = 77
+    Width = 57
+    Height = 21
+    BevelOuter = bvRaised
+    DataField = 'COD_CLIENTE'
+    DataSource = DsCadastrar
+    TabOrder = 1
+  end
+  object EdtNome: TDBEdit
+    Left = 80
+    Top = 109
+    Width = 177
+    Height = 21
+    DataField = 'NOME_CLIENTE'
+    DataSource = DsCadastrar
+    TabOrder = 2
+  end
+  object BtnCadastrar: TButton
+    Left = 182
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'Cadastrar'
+    TabOrder = 3
+    OnClick = BtnCadastrarClick
+  end
+  object QryCadastrar: TpFIBDataSet
+    SelectSQL.Strings = (
+      'select * from clientes where cod_cliente = 1')
+    Active = True
+    Transaction = Dm.TransRead
+    Database = Dm.DB
+    UpdateTransaction = Dm.TransWrite
+    FieldOriginRule = forNoRule
+    Left = 312
+    Top = 72
+    object QryCadastrarCOD_CLIENTE: TFIBIntegerField
+      FieldName = 'COD_CLIENTE'
+    end
+    object QryCadastrarNOME_CLIENTE: TFIBStringField
+      FieldName = 'NOME_CLIENTE'
+      Size = 60
+      EmptyStrToNull = True
+    end
+  end
+  object DsCadastrar: TDataSource
+    DataSet = QryCadastrar
+    Left = 336
+    Top = 144
+  end
+end

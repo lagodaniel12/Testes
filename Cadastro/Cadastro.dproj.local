@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/14 23:19:27.000.698,=C:\Users\LAGO\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 23:20:21.000.186,C:\Users\LAGO\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\LAGO\Desktop\Cadastro\Unt_FrmPrincipal.dfm</Transaction>
+    <Transaction>2019/11/14 23:20:21.000.186,C:\Users\LAGO\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\LAGO\Desktop\Cadastro\Unt_FrmPrincipal.pas</Transaction>
+    <Transaction>2019/11/14 23:20:26.000.512,C:\Users\LAGO\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\LAGO\Desktop\Cadastro\Cadastro.dproj</Transaction>
+    <Transaction>2019/11/14 23:23:26.000.729,=C:\Users\LAGO\Desktop\Cadastro\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 23:24:30.000.722,C:\Users\LAGO\Desktop\Cadastro\Unit1.dfm=C:\Users\LAGO\Desktop\Cadastro\Unt_FrmCadastrar.dfm</Transaction>
+    <Transaction>2019/11/14 23:24:30.000.722,C:\Users\LAGO\Desktop\Cadastro\Unit1.pas=C:\Users\LAGO\Desktop\Cadastro\Unt_FrmCadastrar.pas</Transaction>
+    <Transaction>2019/11/14 23:34:27.000.880,=C:\Users\LAGO\Desktop\Cadastro\Unit1.pas</Transaction>
+    <Transaction>2019/11/14 23:36:34.000.870,C:\Users\LAGO\Desktop\Cadastro\Unit1.pas=C:\Users\LAGO\Desktop\Cadastro\Unt_FrmDM.pas</Transaction>
+    <Transaction>2019/11/14 23:36:34.000.870,C:\Users\LAGO\Desktop\Cadastro\Unit1.dfm=C:\Users\LAGO\Desktop\Cadastro\Unt_FrmDM.dfm</Transaction>
+    <Transaction>2019/11/15 21:54:53.000.627,C:\Users\LAGO\Desktop\Cadastro\Unt_FrmDM.pas=</Transaction>
+    <Transaction>2019/11/15 21:55:23.000.631,=C:\Users\LAGO\Desktop\Cadastro\Unt_FrmDM.pas</Transaction>
+  </Transactions>
+</BorlandProject>

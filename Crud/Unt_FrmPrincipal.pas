@@ -1,0 +1,80 @@
+unit Unt_FrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFrmPrincipal = class(TForm)
+    btnCadastrarCliente: TButton;
+    Button1: TButton;
+    BtnCadProd: TButton;
+    BtnListProd: TButton;
+    procedure btnCadastrarClienteClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure BtnCadProdClick(Sender: TObject);
+    procedure BtnListProdClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+uses
+  Unt_FrmCadCliente, Unt_FrmListagemClientes, Unt_FrmCadProd, Unt_FrmListProd;
+
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.btnCadastrarClienteClick(Sender: TObject);
+begin
+  try
+    if (FrmCadCliente = nil) then Application.CreateForm(TFrmCadCliente, FrmCadCliente);
+    FrmCadCliente.CodAtual := 0;
+    FrmCadCliente.ShowModal;
+  finally
+    FreeAndNil(FrmCadCliente);
+  end;
+
+end;
+
+procedure TFrmPrincipal.BtnCadProdClick(Sender: TObject);
+begin
+  try
+    if (Frm_CadProd = nil) then Application.CreateForm(TFrm_CadProd, Frm_CadProd);
+    Frm_CadProd.CodAtual := 0;
+    Frm_CadProd.ShowModal;
+  finally
+    FreeAndNil(Frm_CadProd);
+  end;
+
+end;
+
+procedure TFrmPrincipal.BtnListProdClick(Sender: TObject);
+begin
+  try
+    if (FrmListProd = nil) then Application.CreateForm(TFrmListProd,FrmListProd);
+    FrmListProd.ShowModal;
+  finally
+    FreeAndNil(FrmListProd);
+  end;
+end;
+
+procedure TFrmPrincipal.Button1Click(Sender: TObject);
+begin
+  try
+    if (FrmListagemClientes = nil) then Application.CreateForm(TFrmListagemClientes, FrmListagemClientes);
+    FrmListagemClientes.ShowModal;
+  finally
+    FreeAndNil(FrmListagemClientes);
+  end;
+end;
+
+end.

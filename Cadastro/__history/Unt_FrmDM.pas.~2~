@@ -1,0 +1,27 @@
+unit Unt_FrmDM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FIBDatabase, pFIBDatabase;
+
+type
+  TDm = class(TDataModule)
+    DB: TpFIBDatabase;
+    TransRead: TpFIBTransaction;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Dm: TDm;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,27 @@
+unit Unt_FrmListProd;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.ExtCtrls;
+
+type
+  TFrmListProd = class(TForm)
+    Panel1: TPanel;
+    GridProd: TDBGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmListProd: TFrmListProd;
+
+implementation
+
+{$R *.dfm}
+
+end.

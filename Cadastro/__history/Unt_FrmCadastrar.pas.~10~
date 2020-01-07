@@ -1,0 +1,70 @@
+unit Unt_FrmCadastrar;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls,
+  Vcl.ExtCtrls, Data.DB, FIBDataSet, pFIBDataSet;
+
+type
+  TFrmCadastrar = class(TForm)
+    Panel1: TPanel;
+    LblCadastro: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    EdtCod: TDBEdit;
+    EdtNome: TDBEdit;
+    QryCadastrar: TpFIBDataSet;
+    DsCadastrar: TDataSource;
+    BtnCadastrar: TButton;
+    QryCadastrarCOD_CLIENTE: TFIBIntegerField;
+    QryCadastrarNOME_CLIENTE: TFIBStringField;
+    procedure BtnCadastrarClick(Sender: TObject);
+  private
+    { Private declarations }
+    Function TestaCampos : Boolean;
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastrar: TFrmCadastrar;
+
+implementation
+
+uses Unt_FrmDM;
+
+{$R *.dfm}
+
+{ TFrmCadastrar }
+
+procedure TFrmCadastrar.BtnCadastrarClick(Sender: TObject);
+begin
+  if (not TestaCampos) then Exit;
+
+  QryCadastrarCOD_CLIENTE := EdtCod.Text;
+  QryCadastrarNOME_CLIENTE := EdtNome.Text;
+end;
+
+function TFrmCadastrar.TestaCampos: Boolean;
+begin
+  Result := False;
+  if (Trim(EdtCod.Text) = '') then
+    begin
+      ShowMessage('O Campo Código é Obrigatório');
+      EdtCod.SetFocus;
+      Exit;
+    end;
+
+  if (Trim(EdtNome.Text) = '') then
+    begin
+      ShowMessage('O Campo Nome é Obrigatório');
+      EdtNome.SetFocus;
+      Exit;
+    end;
+
+  Result := True;
+end;
+
+end.

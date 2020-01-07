@@ -1,0 +1,43 @@
+object DM: TDM
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 359
+  Width = 490
+  object DB: TpFIBDatabase
+    Connected = True
+    DBName = 'C:\Users\LAGO\Desktop\Crud\DATABASE.FDB'
+    DBParams.Strings = (
+      'user_name=SUPS'
+      'password=maps3880'
+      'lc_ctype=WIN1252')
+    SQLDialect = 3
+    Timeout = 0
+    LibraryName = 'fbclient.dll'
+    WaitForRestoreConnect = 0
+    Left = 40
+    Top = 24
+  end
+  object TransRead: TpFIBTransaction
+    Active = True
+    DefaultDatabase = DB
+    TRParams.Strings = (
+      'read'
+      'nowait'
+      'rec_version'
+      'read_committed')
+    TPBMode = tpbDefault
+    Left = 112
+    Top = 24
+  end
+  object TransWrite: TpFIBTransaction
+    DefaultDatabase = DB
+    TRParams.Strings = (
+      'write'
+      'nowait'
+      'rec_version'
+      'read_committed')
+    TPBMode = tpbDefault
+    Left = 112
+    Top = 80
+  end
+end

@@ -1,0 +1,70 @@
+unit Unt_FrmListagemClientes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls, FIBDataSet, pFIBDataSet;
+
+type
+  TFrmListagemClientes = class(TForm)
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+    Panel2: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    DSListagemClientes: TDataSource;
+    QryClientes: TpFIBDataSet;
+    QryClientesCOD_CLIENTE: TFIBIntegerField;
+    QryClientesNOME_CLIENTE: TFIBStringField;
+    LbCountReg: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    edtNome: TEdit;
+    edtCodigo: TEdit;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    procedure getParametros(iSQL: TStrings);
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmListagemClientes: TFrmListagemClientes;
+
+implementation
+
+uses Unt_DM;
+
+{$R *.dfm}
+
+procedure TFrmListagemClientes.Button1Click(Sender: TObject);
+begin
+  try
+    Screen.Cursor := crHourGlass;
+    QryClientes.Close;
+    QryClientes.SQL.Clear;
+    QryClientes.SQL.Add('SELECT * FROM CLIENTES');
+    getParametros(QryClientes.SQL);
+    QryClientes.Open();
+
+    LbCountReg.Caption := QryClientes.RecordCount.ToString + ' Registro(s)';
+  finally
+    Screen.Cursor := crDefault;
+  end;
+end;
+
+procedure TFrmListagemClientes.Button2Click(Sender: TObject);
+begin
+  edtCodigo.Clear;
+  edtNome.Clear;
+end;
+
+procedure TFrmListagemClientes.getParametros(iSQL: TStrings);
+begin
+  if (edtCodigo.Text <> '') then iSQL.Add(' AND COD_CLIENTE = ' + edtCodigo.Text);
+  if (edtNome.Text <> '') then iSQL.Add(' AND NOME_CLIENTE = ' + edtNome.Text);
+end;
+
+end.

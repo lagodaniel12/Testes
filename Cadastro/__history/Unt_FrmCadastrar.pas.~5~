@@ -1,0 +1,35 @@
+unit Unt_FrmCadastrar;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls,
+  Vcl.ExtCtrls, Data.DB, FIBDataSet, pFIBDataSet;
+
+type
+  TFrmCadastrar = class(TForm)
+    Panel1: TPanel;
+    LblCadastro: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    EdtCod: TDBEdit;
+    EdtNome: TDBEdit;
+    QryCadastrar: TpFIBDataSet;
+    DsCadastrar: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastrar: TFrmCadastrar;
+
+implementation
+
+uses Unt_FrmDM;
+
+{$R *.dfm}
+
+end.

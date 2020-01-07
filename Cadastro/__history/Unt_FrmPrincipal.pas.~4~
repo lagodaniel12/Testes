@@ -1,0 +1,39 @@
+unit Unt_FrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFrmPrincipal = class(TForm)
+    BtnCadastrar: TButton;
+    BtnListar: TButton;
+    procedure BtnCadastrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+uses Unt_FrmCadastrar;
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.BtnCadastrarClick(Sender: TObject);
+begin
+  try
+    if (FrmCadastrar = nil) then Application.CreateForm(TFrmCadastrar, FrmCadastrar);
+    FrmCadastrar.ShowModal;
+  finally
+    FreeAndNil(FrmCadastrar);
+  end;
+end;
+
+end.
